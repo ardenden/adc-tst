@@ -1,0 +1,23 @@
+{
+  "name": "adc-tst",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "database": "npm run generate-sql --workspace=backend && npm run migrate-sql --workspace=backend",
+    "backend": "npm run dev --workspace=backend",
+    "frontend": "npm run dev --workspace=frontend",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

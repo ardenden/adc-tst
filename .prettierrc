@@ -1,0 +1,13 @@
+{
+  "overrides": [
+    {
+      "files": ["*.ts", "*.js", "*.tsx", "*.jsx"],
+      "options": {
+        "semi": false,
+        "printWidth": 120,
+        "tabWidth": 4,
+        "useTabs": true
+      }
+    }
+  ]
+}
